@@ -27,8 +27,8 @@ app.post('/users', async (req, res) => {
 app.use(express.json());
 app.use(cors());
 
-app.use("/cursos", cursosRoutes);
-app.use("/login", loginRoutes);
+app.use("/", cursosRoutes);
+app.use("/auth", loginRoutes);
 
 
 app.listen(8800);
